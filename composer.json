@@ -2,6 +2,8 @@
     "name": "drexlerux/yii2-lcswitch",
     "description": "LC Switch extension for Yii2",
     "type": "yii2-extension",
+    "minimum-stability" : "dev",
+    "prefer-stable": true,
     "keywords": ["yii2","extension"," widget"],
     "license": "MIT",
     "authors": [
