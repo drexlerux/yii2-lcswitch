@@ -17,5 +17,11 @@
         "psr-4": {
             "drexlerux\\lcswitch\\": ""
         }
-    }
+    },
+    "repositories":[
+        {
+            "type": "git",
+            "url": "https://github.com/drexlerux/yii2-lcswitch.git"
+        }
+    ]
 }
