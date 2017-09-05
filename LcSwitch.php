@@ -5,7 +5,7 @@ namespace drexlerux\lcswitch;
 /**
  * This is just an example.
  */
-class AutoloadExample extends \yii\base\Widget
+class LcSwitch extends \yii\base\Widget
 {
     public function run()
     {
