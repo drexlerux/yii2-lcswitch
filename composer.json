@@ -13,8 +13,9 @@
         }
     ],
     "require": {
+        "php": ">=5.6.0",
         "yiisoft/yii2": "~2.0.0",
-        "drexlerux/yii2-lcswitch": "dev-master"
+        "bower-asset/lc-switch": "*",
     },
     "autoload": {
         "psr-4": {

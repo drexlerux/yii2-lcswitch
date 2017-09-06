@@ -2,13 +2,28 @@
 
 namespace drexlerux\lcswitch;
 
+use yii\bootstrap\Html;
+use yii\helpers\Json;
+use yii\widgets\InputWidget;
+
 /**
- * This is just an example.
+ * Class for instance LC Switch on any view
  */
-class LcSwitch extends \yii\base\Widget
+class LcSwitch extends InputWidget
 {
-    public function run()
-    {
-        return "Hola mundo";
+    public $options = [];
+
+    private $inputId;
+    public function init(){
+        $this->inputId = Html::getInputId($this->model, $this->attribute);
+    }
+
+    public function run(){
+        echo Html::activeInput('checkbox', $this->model, $this->attribute, $this->options);
+    }
+
+
+    public function registerScript(){
+        $view = $this->getView();
     }
 }
