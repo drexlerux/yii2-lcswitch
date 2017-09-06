@@ -24,8 +24,13 @@ to the require section of your `composer.json` file.
 
 Usage
 -----
-
-Once the extension is installed, simply use it in your code by  :
-
-```php
-<?= \drexlerux\lcswitch\AutoloadExample::widget(); ?>```
+1. Namespace to use widget class
+  ```php
+  use drexlerux\lcswitch\LcSwitch;
+  ```
+2. Once the extension is installed, simply use it in your code by  :
+  ```php
+  <?= $form->field($model, 'attribute')->widget(LcSwitch::classname(), [
+  
+  ]); ?>
+  ```
