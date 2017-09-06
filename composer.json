@@ -15,7 +15,7 @@
     "require": {
         "php": ">=5.6.0",
         "yiisoft/yii2": "~2.0.0",
-        "bower-asset/lc-switch": "*",
+        "bower-asset/lc-switch": "*"
     },
     "autoload": {
         "psr-4": {
