@@ -27,7 +27,9 @@ class LcSwitch extends InputWidget
 
     public function run(){
         $this->registerScript();
-        echo "<div id='container-$this->inputId'>". Html::activeInput('checkbox', $this->model, $this->attribute, $this->options) ."</div>";
+        $hidden = Html::activeHiddenInput($this->model, $this->attribute, ['id'=>'hidden_'.$this->inputId]);
+        $input = Html::activeInput('checkbox', $this->model, $this->attribute, $this->options);
+        echo "<div id='container-$this->inputId'>". $hidden . $input ."</div>";
     }
 
 
