@@ -31,6 +31,16 @@ Usage
 2. Once the extension is installed, simply use it in your code by  :
   ```php
   <?= $form->field($model, 'attribute')->widget(LcSwitch::classname(), [
-  
+      'options'=>[
+          'on_text' => Yii::t('app', 'Yes'), // Default value
+          'of_text' => Yii::t('app', 'No'), // Default value
+          'width' => '100px'
+      ],
+      'events' => [
+          'lcs-init' => "function(input){}"
+          'lcs-statuschange' => 'function(){}',
+          'lcs-on' => 'function(){}',
+          'lcs-off' => 'function(){}',
+      ]
   ]); ?>
   ```
